@@ -8,7 +8,9 @@
 
 ## How to test
 
-- [ ] Tests pass
+- [ ] `uv run ruff check .`
+- [ ] `uv run ruff format --check .`
+- [ ] `uv run pytest`
 - [ ] Tested manually
 
 ## Commit type

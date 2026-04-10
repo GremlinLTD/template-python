@@ -2,17 +2,30 @@
 
 > Replace this with your project description.
 
-## Setup
+## Install
+
+```sh
+uv pip install REPO_NAME
+```
+
+## Usage
+
+```sh
+python -m src.main
+```
+
+## Development
 
 ```sh
 git clone https://github.com/gremlinltd/REPO_NAME.git
 cd REPO_NAME
+uv sync
+uv run pytest
 ```
 
 ## After creating a repo from this template
 
-1. Replace `REPO_NAME` in `cog.toml`, `cliff.toml`, `CONTRIBUTING.md`, and this README
-2. Add a `sonar-project.properties` with your SonarCloud project key
-3. Set up SonarCloud and Codecov for the repo
-4. Add language-specific CI and release workflows
-5. Update this README with actual project docs
+1. Replace `REPO_NAME` in `pyproject.toml`, `cog.toml`, `cliff.toml`, `sonar-project.properties`, `CONTRIBUTING.md`, and this README
+2. Set up SonarCloud project and add `SONAR_TOKEN` as a repo secret
+3. Set up Codecov for the repo
+4. Update this README with actual project docs

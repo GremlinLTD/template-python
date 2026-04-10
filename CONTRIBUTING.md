@@ -5,6 +5,7 @@
 ```sh
 git clone https://github.com/gremlinltd/REPO_NAME.git
 cd REPO_NAME
+uv sync
 ```
 
 ## Commits
@@ -40,6 +41,16 @@ We use Gitflow:
 - `bugfix/<name>` - bug fixes
 - `hotfix/<name>` - urgent fixes off main
 - `release/<name>` - release prep
+
+## Testing
+
+```sh
+uv run ruff check .
+uv run ruff format --check .
+uv run pytest
+```
+
+All three need to pass before we merge.
 
 ## Pull requests
 
