@@ -34,5 +34,5 @@ source = ["src"]
 dev = [
     "pytest>=8",
     "pytest-cov>=6",
-    "ruff>=0.11",
+    "ruff>=0.15.10",
 ]
